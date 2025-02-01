@@ -22,7 +22,7 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [
-      remarkMath,
+      remarkMath, // 支持 LaTeX 数学公式
       remarkToc,
       [
         remarkCollapse,
@@ -31,7 +31,7 @@ export default defineConfig({
         },
       ],
     ],
-    rehypePlugins: [rehypeKatex],
+    rehypePlugins: [rehypeKatex], // 用于渲染 LaTeX 方程
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
       themes: { light: "min-light", dark: "night-owl" },
@@ -48,3 +48,4 @@ export default defineConfig({
     contentLayer: true,
   },
 });
+
