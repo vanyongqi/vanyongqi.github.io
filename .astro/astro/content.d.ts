@@ -141,55 +141,6 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"adding-new-post.md": {
-	id: "adding-new-post.md";
-  slug: "adding-new-posts-in-astropaper-theme";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"astro-paper-2.md": {
-	id: "astro-paper-2.md";
-  slug: "astro-paper-2";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"astro-paper-3.md": {
-	id: "astro-paper-3.md";
-  slug: "astro-paper-v3";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"astro-paper-4.md": {
-	id: "astro-paper-4.md";
-  slug: "astro-paper-v4";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"customizing-astropaper-theme-color-schemes.md": {
-	id: "customizing-astropaper-theme-color-schemes.md";
-  slug: "customizing-astropaper-theme-color-schemes";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"dynamic-og-images.md": {
-	id: "dynamic-og-images.md";
-  slug: "dynamic-og-image-generation-in-astropaper-blog-posts";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"example-draft-post.md": {
-	id: "example-draft-post.md";
-  slug: "example-draft-post";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "how-to-add-a-new-social-icon.md": {
 	id: "how-to-add-a-new-social-icon.md";
   slug: "how-to-add-a-new-social-icon";

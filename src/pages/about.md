@@ -14,6 +14,7 @@ title: "About"
 - 微服务架构：gRPC、Go Micro、分布式系统设计
 
 - CV领域：图像识别、图像去雾、
+- 正在学习 LLM
 
 ### 博客内容
 在这里，我会分享以下内容：
@@ -44,6 +45,7 @@ AI 与后端结合：AI 模型部署。
 
 GitHub：[https://github.com/vanyongqi]
 
+Wechat: fyongqi7
 
 感谢你的访问，希望你能在这里找到有价值的内容！
 <div>
