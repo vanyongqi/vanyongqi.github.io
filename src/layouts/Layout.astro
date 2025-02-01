@@ -118,12 +118,12 @@ const structuredData = {
       crossorigin
     />
 
+    <!-- 本地加载 KaTeX CSS -->
+    <link rel="stylesheet" href="/katex.min.css" />
+
     <meta name="theme-color" content="" />
 
     {
-      // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
-      // include google-site-verification tag in the heading
-      // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
       googleSiteVerification && (
         <meta
           name="google-site-verification"
