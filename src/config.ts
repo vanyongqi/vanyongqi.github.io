@@ -52,7 +52,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Wechat",
-    href: "fyongqi7",
+    href: "/about",
     linkTitle: `查看 StackOverflow 上关于 ${SITE.title} 的问题`,
     active: true,
   },
