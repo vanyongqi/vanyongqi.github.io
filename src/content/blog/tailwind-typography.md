@@ -8,6 +8,7 @@ tags:
   - TypeScript
   - Astro
 description: "EXAMPLE POST: About Tailwind Typography Plugin and how you can use it effectively."
+modDatetime: 2025-02-01T10:57:16.810Z
 ---
 
 > This article is from [TailwindLabs](https://tailwindcss-typography.vercel.app/). I put this article to demonstrate how you can write blog posts/articles using AstroPaper theme.

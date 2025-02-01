@@ -1,7 +1,7 @@
 ---
 author: Sat Naing
 pubDatetime: 2022-09-26T12:13:24Z
-modDatetime: 2024-01-04T09:09:06Z
+modDatetime: 2025-02-01T10:57:16.809Z
 title: Predefined color schemes
 slug: predefined-color-schemes
 featured: false

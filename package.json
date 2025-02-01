@@ -11,7 +11,9 @@
     "astro": "astro",
     "format:check": "prettier --check . --plugin=prettier-plugin-astro",
     "format": "prettier --write . --plugin=prettier-plugin-astro",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "husky install",
+    "update-frontmatter": "node scripts/update-frontmatter.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
@@ -42,11 +44,20 @@
     "eslint": "^9.10.0",
     "eslint-plugin-astro": "^1.2.4",
     "globals": "^15.9.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "typescript-eslint": "^8.5.0"
-  }
+  },
+  "lint-staged": {
+  "src/content/blog/**/*.md": [
+    "npm run update-frontmatter",
+    "git add"
+  ]
+}
+
 }
