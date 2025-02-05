@@ -148,6 +148,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"tencent-code-guide.md": {
+	id: "tencent-code-guide.md";
+  slug: "tencent-code-guide";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "代码安全指南.md": {
 	id: "代码安全指南.md";
   slug: "代码安全指南";
