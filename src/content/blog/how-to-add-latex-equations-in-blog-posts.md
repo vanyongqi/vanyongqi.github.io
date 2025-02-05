@@ -7,7 +7,7 @@ draft: false
 tags:
   - docs
 description: How to use LaTeX equations in your Markdown files for AstroPaper.
-modDatetime: 2025-02-01T12:38:13.749Z
+modDatetime: 2025-02-01T12:43:53.841Z
 ---
 
 This document demonstrates how to use LaTeX equations in your Markdown files for AstroPaper. LaTeX is a powerful typesetting system often used for mathematical and scientific documents.
