@@ -1,13 +1,13 @@
 ---
 author: Vanyongqi
-pubDatetime: 2025-02-05T18:57:52.737Z
+pubDatetime: 2025-02-06T18:57:52.737Z
 title: Stripe支付(go 版本)
 featured: false
 draft: false
 tags:
   - 支付方案
 description: 接入stripe支付方案,所在项目需要接入Stripe支付平台,做个调研,并提供案例demo.
-modDatetime: 2025-02-06T04:00:23.016Z
+modDatetime: 2025-02-07T02:14:13.374Z
 ---
 >我想这应该是一个全流程的记录贴,包含我解决问题的思路与方式.
 
