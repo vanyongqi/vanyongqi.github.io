@@ -7,7 +7,7 @@ draft: false
 tags:
   - 支付方案
 description: 接入stripe支付方案,所在项目需要接入Stripe支付平台,做个调研,并提供案例demo.
-modDatetime: 2025-02-05T18:58:43.506Z
+modDatetime: 2025-02-06T04:00:23.016Z
 ---
 >我想这应该是一个全流程的记录贴,包含我解决问题的思路与方式.
 
@@ -100,7 +100,6 @@ import (
 	"github.com/joho/godotenv"
 	"github.com/stripe/stripe-go/v72"
 	"github.com/stripe/stripe-go/v72/checkout/session"
-	"github.com/stripe/stripe-go/v72/price"
 	"github.com/stripe/stripe-go/v72/webhook"
 )
 
@@ -113,66 +112,19 @@ func main() {
 
 	stripe.Key = os.Getenv("STRIPE_SECRET_KEY")
 
-	// For sample support and debugging, not required for production:
-    // 用于调试 生产环境不需要设置
-	stripe.SetAppInfo(&stripe.AppInfo{
-		Name:    "stripe-samples/checkout-one-time-payments",
-		Version: "0.0.1",
-		URL:     "https://github.com/stripe-samples/checkout-one-time-payments",
-	})
-   // 路由配置
-	http.Handle("/", http.FileServer(http.Dir(os.Getenv("STATIC_DIR")))) // 进入默认的index.html页面
-
-	http.HandleFunc("/config", handleConfig) //配置信息
-	http.HandleFunc("/checkout-session", handleCheckoutSession) // 根据会话 ID 获取支付会话信息
-	http.HandleFunc("/create-checkout-session", handleCreateCheckoutSession) //创建新的支付会话 
-	http.HandleFunc("/webhook", handleWebhook) // 处理 Stripe 的 Webhook 回调
+	http.Handle("/", http.FileServer(http.Dir(os.Getenv("STATIC_DIR"))))
+	http.HandleFunc("/create-checkout-session", handleCreateCheckoutSession)
+	http.HandleFunc("/webhook", handleWebhook)
 
 	log.Println("server running at 0.0.0.0:4242")
 	http.ListenAndServe("0.0.0.0:4242", nil)
 }
-
-// ErrorResponseMessage represents the structure of the error
-// object sent in failed responses.
 type ErrorResponseMessage struct {
 	Message string `json:"message"`
 }
 
-// ErrorResponse represents the structure of the error object sent
-// in failed responses.
 type ErrorResponse struct {
 	Error *ErrorResponseMessage `json:"error"`
-}
-
-func handleConfig(w http.ResponseWriter, r *http.Request) {
-	if r.Method != "GET" {
-		http.Error(w, http.StatusText(http.StatusMethodNotAllowed), http.StatusMethodNotAllowed)
-		return
-	}
-	// Fetch a price, use it's unit amount and currency
-	p, _ := price.Get(
-		os.Getenv("PRICE"),
-		nil,
-	)
-	writeJSON(w, struct {
-		PublicKey  string `json:"publicKey"`
-		UnitAmount int64  `json:"unitAmount"`
-		Currency   string `json:"currency"`
-	}{
-		PublicKey:  os.Getenv("STRIPE_PUBLISHABLE_KEY"),
-		UnitAmount: p.UnitAmount,
-		Currency:   string(p.Currency),
-	})
-}
-
-func handleCheckoutSession(w http.ResponseWriter, r *http.Request) {
-	if r.Method != "GET" {
-		http.Error(w, http.StatusText(http.StatusMethodNotAllowed), http.StatusMethodNotAllowed)
-		return
-	}
-	sessionID := r.URL.Query().Get("sessionId")
-	s, _ := session.Get(sessionID, nil)
-	writeJSON(w, s)
 }
 
 func handleCreateCheckoutSession(w http.ResponseWriter, r *http.Request) {

@@ -141,6 +141,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"8小时外,如何干好后端.md": {
+	id: "8小时外,如何干好后端.md";
+  slug: "8小时外如何干好后端";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "Stripe支付(go 版本).md": {
 	id: "Stripe支付(go 版本).md";
   slug: "stripe支付go-版本";
