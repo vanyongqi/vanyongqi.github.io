@@ -7,7 +7,7 @@ draft: false
 tags:
   - 支付方案
 description: 接入stripe支付方案,所在项目需要接入Stripe支付平台,做个调研,并提供案例demo.
-modDatetime: 2025-02-07T03:56:43.556Z
+modDatetime: 2025-02-07T03:56:58.739Z
 ---
 >我想这应该是一个全流程的记录贴,包含我解决问题的思路与方式.
 
