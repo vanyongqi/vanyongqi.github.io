@@ -141,16 +141,16 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"how-to-add-latex-equations-in-blog-posts.md": {
-	id: "how-to-add-latex-equations-in-blog-posts.md";
-  slug: "how-to-add-latex-equations-in-blog-posts";
+"Stripe支付(go 版本).md": {
+	id: "Stripe支付(go 版本).md";
+  slug: "stripe支付go-版本";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"tencent-code-guide.md": {
-	id: "tencent-code-guide.md";
-  slug: "tencent-code-guide";
+"how-to-add-latex-equations-in-blog-posts.md": {
+	id: "how-to-add-latex-equations-in-blog-posts.md";
+  slug: "how-to-add-latex-equations-in-blog-posts";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

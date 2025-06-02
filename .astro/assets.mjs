@@ -1,1 +1,7 @@
-export default new Map();
+
+import __ASTRO_IMAGE_IMPORT_ZQzh8G from '../../assets/images/Stripe支付(go 版本)/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2FStripe%E6%94%AF%E4%BB%98%28go+%E7%89%88%E6%9C%AC%29.md';
+import __ASTRO_IMAGE_IMPORT_Z7Kyec from '../../assets/images/Stripe支付(go 版本)/pubkey.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2FStripe%E6%94%AF%E4%BB%98%28go+%E7%89%88%E6%9C%AC%29.md';
+import __ASTRO_IMAGE_IMPORT_CJsUw from '../../assets/images/Stripe支付(go 版本)/imagePrice.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2FStripe%E6%94%AF%E4%BB%98%28go+%E7%89%88%E6%9C%AC%29.md';
+import __ASTRO_IMAGE_IMPORT_1fAxk9 from '../../assets/images/Stripe支付(go 版本)/imagePriceId.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2FStripe%E6%94%AF%E4%BB%98%28go+%E7%89%88%E6%9C%AC%29.md';
+export default new Map([["../../assets/images/Stripe支付(go 版本)/image.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2FStripe%E6%94%AF%E4%BB%98%28go+%E7%89%88%E6%9C%AC%29.md", __ASTRO_IMAGE_IMPORT_ZQzh8G], ["../../assets/images/Stripe支付(go 版本)/pubkey.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2FStripe%E6%94%AF%E4%BB%98%28go+%E7%89%88%E6%9C%AC%29.md", __ASTRO_IMAGE_IMPORT_Z7Kyec], ["../../assets/images/Stripe支付(go 版本)/imagePrice.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2FStripe%E6%94%AF%E4%BB%98%28go+%E7%89%88%E6%9C%AC%29.md", __ASTRO_IMAGE_IMPORT_CJsUw], ["../../assets/images/Stripe支付(go 版本)/imagePriceId.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2FStripe%E6%94%AF%E4%BB%98%28go+%E7%89%88%E6%9C%AC%29.md", __ASTRO_IMAGE_IMPORT_1fAxk9]]);
+		
